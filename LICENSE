@@ -1,0 +1,17 @@
+Copyright (c) 2026 Kristoffer E. Johansson <kristoffer.johansson@bio.ku.dk>. All rights reserved.
+
+This repository is a beta version shared for viewing and testing only. No licence is
+granted to copy, modify, redistribute or otherwise reuse the code, notebooks, data or
+figures in this repository, in whole or in part, without prior written permission from
+the copyright holder. Viewing the repository on GitHub, forking it on GitHub and running
+the notebooks (locally or via the Google Colab link) for personal evaluation is permitted.
+
+THE MATERIAL IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. IN NO
+EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
+ARISING FROM THE USE OF THIS MATERIAL.
+
+Third-party components are not covered by this notice and remain under their own licences:
+- js/3Dmol-min.js: 3Dmol.js v2.5.4 (BSD-3-Clause; includes code from GLmol, three.js and
+  jQuery), see js/3Dmol-LICENSE.txt and js/3Dmol-min.js.LICENSE.txt
+- AF-O60260-F1-model_v2.pdb: AlphaFold Protein Structure Database model (CC BY 4.0), see
+  the credits in README.md
