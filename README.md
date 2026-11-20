@@ -16,14 +16,16 @@ curves (spline and LOWESS smoothing), and the per-variant residuals are shown as
 
 Click the badge above. Run the setup cell first: it installs `ipympl` and `py3Dmol`, enables
 Colab's widget manager and downloads only the files the notebook needs from this repository
-(the four `parkin_*.py` modules, `comparison_res.csv`, the AlphaFold model and
-`js/3Dmol-min.js`). If the interactive figures show only as text, use
-*Runtime → Restart session* and run all cells again.
+(the four `parkin_*.py` modules, `comparison_res.csv` and the AlphaFold model). If the
+interactive figures show only as text, use *Runtime → Restart session* and run all cells
+again.
 
 ## Run locally
 
 Requires Python with numpy, matplotlib, ipywidgets, ipympl, py3Dmol and JupyterLab. Open
-`parkin_mave_comparison.ipynb` and run all cells. Quick checks of the code:
+`parkin_mave_comparison.ipynb` and run all cells. The structure viewer loads 3Dmol.js from the
+web; to use it offline, save `3Dmol-min.js` (version 2.5.4) as `js/3Dmol-min.js` in the
+project folder and it is used instead. Quick checks of the code:
 
 ```bash
 python tests/test_explorer.py
@@ -41,8 +43,6 @@ python tests/test_explorer.py
 | `parkin_structure.py` | py3Dmol structure view |
 | `comparison_res.csv` | variant scores, residuals and per-residue annotation |
 | `AF-O60260-F1-model_v2.pdb` | AlphaFold model of Parkin |
-| `js/3Dmol-min.js` | local copy of 3Dmol.js 2.5.4 (structure viewer works offline) |
-| `js/3Dmol-LICENSE.txt`, `js/3Dmol-min.js.LICENSE.txt` | 3Dmol.js licence and notice |
 | `LICENSE` | licence terms for this repository (beta, all rights reserved) |
 | `tests/test_explorer.py` | headless checks of data, figures and explorer |
 
@@ -52,8 +52,8 @@ This is a beta version shared for viewing and testing: all rights reserved, see 
 Please do not reuse the code, data or figures without permission.
 
 Third-party material keeps its own licence:
-- **3Dmol.js** v2.5.4 (`js/3Dmol-min.js`), BSD-3-Clause, see `js/3Dmol-LICENSE.txt`.
-  Rego N & Koes D (2015) 3Dmol.js: molecular visualization with WebGL.
+- **3Dmol.js** (structure viewer, via py3Dmol; loaded at run time, not part of this
+  repository), BSD-3-Clause. Rego N & Koes D (2015) 3Dmol.js: molecular visualization with WebGL.
   *Bioinformatics* 31:1322–1324. https://doi.org/10.1093/bioinformatics/btu829
 - **AlphaFold model** of Parkin (`AF-O60260-F1-model_v2.pdb`, AlphaFold Protein Structure
   Database, https://alphafold.ebi.ac.uk/entry/O60260), CC BY 4.0

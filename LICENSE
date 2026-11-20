@@ -10,8 +10,8 @@ THE MATERIAL IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY
 ARISING FROM THE USE OF THIS MATERIAL.
 
-Third-party components are not covered by this notice and remain under their own licences:
-- js/3Dmol-min.js: 3Dmol.js v2.5.4 (BSD-3-Clause; includes code from GLmol, three.js and
-  jQuery), see js/3Dmol-LICENSE.txt and js/3Dmol-min.js.LICENSE.txt
+Third-party material is not covered by this notice and remains under its own licence:
 - AF-O60260-F1-model_v2.pdb: AlphaFold Protein Structure Database model (CC BY 4.0), see
   the credits in README.md
+The structure viewer uses py3Dmol and 3Dmol.js (BSD-3-Clause), which are installed or
+loaded from the web at run time and are not part of this repository.
